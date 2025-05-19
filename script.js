@@ -50,6 +50,26 @@
     });
   });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const inputs = document.querySelectorAll(".otp-inputs input");
+
+  inputs.forEach((input, index) => {
+    input.addEventListener("input", (e) => {
+      const value = e.target.value;
+      if (value.length === 1 && index < inputs.length - 1) {
+        inputs[index + 1].focus();
+      }
+    });
+
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Backspace" && !e.target.value && index > 0) {
+        inputs[index - 1].focus();
+      }
+    });
+  });
+});
+
+
   // 🎉 Confetti animation
   function showConfetti() {
     const canvas = document.createElement("canvas");
