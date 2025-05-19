@@ -28,7 +28,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(var(--blue) 3%, var(--voilet) 110%);
+    background: linear-gradient(var(--blue) 3%, var(--voilet) 100%);
 }
 
 .wrapper{

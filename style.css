@@ -3,14 +3,27 @@ body {
   font-family: 'Kanit', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #ffe3ec, #ffffff);
+  /* background: linear-gradient(to bottom, #ffe3ec, #ffffff); */
   color: #333;
   text-align: center;
+  background: linear-gradient(var(--piggypink) 3%, var(--lightpink) 110%);
+}
+
+:root{
+    --piggypink : #ee9ca7;
+    --lightpink : #ffdde1;
+    --blue      : #4e7ff1;
+    --voilet    : #8a5a8f;
+    --lightblack: #515c6f;
+    --white     : #fff;
+    --darkwhite : #cecaca;
+    --ponkshadow: #ffcbdd;
+    --lighbshadow:rgba(0, 0, 0, 0.15);
+    --shadow    : rgba(0, 0, 0, 0.99);
 }
 
 .header {
   padding: 2rem 1rem;
-  background-color: #ffb6c1;
   color: white;
 }
 
@@ -61,7 +74,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 .otp-inputs input {
