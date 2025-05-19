@@ -1,32 +1,32 @@
 // ==== script.js: ควบคุมการเล่นเพลง และ OTP ปลดล็อกข้อความลับ ====
 // 🎵 Music Player
-document.addEventListener("DOMContentLoaded", () => {
-  const playBtn = document.getElementById("play-btn");
-  const bgMusic = document.getElementById("bg-music");
-  let isPlaying = false;
+// document.addEventListener("DOMContentLoaded", () => {
+//   const playBtn = document.getElementById("play-btn");
+//   const bgMusic = document.getElementById("bg-music");
+//   let isPlaying = false;
 
-  // 🔊 พยายามเล่นอัตโนมัติเมื่อโหลดหน้า
-  const tryAutoPlay = () => {
-    bgMusic.play().then(() => {
-      isPlaying = true;
-      playBtn.textContent = "⏸️";
-    }).catch(() => {
-      console.log("Auto-play ถูกบล็อกโดยเบราว์เซอร์");
-    });
-  };
+//   // 🔊 พยายามเล่นอัตโนมัติเมื่อโหลดหน้า
+//   const tryAutoPlay = () => {
+//     bgMusic.play().then(() => {
+//       isPlaying = true;
+//       playBtn.textContent = "⏸️";
+//     }).catch(() => {
+//       console.log("Auto-play ถูกบล็อกโดยเบราว์เซอร์");
+//     });
+//   };
 
-  tryAutoPlay();
+//   tryAutoPlay();
 
-  playBtn.addEventListener("click", () => {
-    if (isPlaying) {
-      bgMusic.pause();
-      playBtn.textContent = "▶️";
-    } else {
-      bgMusic.play();
-      playBtn.textContent = "⏸️";
-    }
-    isPlaying = !isPlaying;
-  });
+//   playBtn.addEventListener("click", () => {
+//     if (isPlaying) {
+//       bgMusic.pause();
+//       playBtn.textContent = "▶️";
+//     } else {
+//       bgMusic.play();
+//       playBtn.textContent = "⏸️";
+//     }
+//     isPlaying = !isPlaying;
+//   });
 
   // OTP Logic
   const otpInputs = document.querySelectorAll(".otp-inputs input");
@@ -120,4 +120,4 @@ document.addEventListener("DOMContentLoaded", () => {
         disableOnInteraction: false,
       },
     });
-});
+// });
