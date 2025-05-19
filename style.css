@@ -57,6 +57,13 @@ body {
   margin: 2rem;
 }
 
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .otp-inputs input {
   width: 40px;
   height: 50px;
@@ -65,6 +72,14 @@ body {
   text-align: center;
   border: 2px solid #f78da4;
   border-radius: 6px;
+}
+
+@media (max-width: 480px) {
+  .otp-inputs input {
+    width: 40px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
 }
 
 #secret-content {
