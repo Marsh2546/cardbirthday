@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Birthday</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <section class="header">
+        <h1>สุขสันต์วันเกิด</h1>
+        <h2 id="receiver-name">พลอย ❤️</h2>
+      </section>
+
+      <section class="floating-stars">
+        <!-- ใส่ภาพตกแต่ง (ดาว, หัวใจ ฯลฯ) -->
+      </section>
+
+      <section class="swiper-section">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- <div class="swiper-slide"><img src="img1.jpg" /></div> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="music-player">
+        <audio id="bg-music" src="song.mp3" preload="auto"></audio>
+        <div class="music-controls">
+          <button id="play-btn">▶️</button>
+          <span id="music-title">ชื่อเพลง</span>
+        </div>
+      </section>
+
+      <section class="message">
+        <ul>
+          <li>พิมพ์ข้อความอวยพรจากใจคุณที่นี่...</li>
+          <li>จะยาวกี่บรรทัดก็ได้</li>
+        </ul>
+      </section>
+
+      <section class="otp-zone">
+        <h3>Memories Zone 📸</h3>
+        <p>กรอกรหัส OTP 6 หลักเพื่อปลดล็อกข้อความลับ</p>
+        <div class="otp-inputs">
+          <input maxlength="1" />
+          <input maxlength="1" />
+          <input maxlength="1" />
+          <input maxlength="1" />
+          <input maxlength="1" />
+          <input maxlength="1" />
+        </div>
+      </section>
+
+      <section id="secret-content" class="hidden">
+        <h4>ข้อความลับ 💌</h4>
+        <p>ใส่ได้เมื่อ OTP ถูกต้อง</p>
+      </section>
+
+      <footer>
+        <p>สร้างด้วยใจ 💖 โดยคุณ</p>
+      </footer>
+    </div>
+  </body>
+</html>

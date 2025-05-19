@@ -1,0 +1,84 @@
+/* ==== style.css: ตกแต่งเว็บไซต์วันเกิด ==== */
+
+body {
+  font-family: 'Kanit', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ffe3ec, #ffffff);
+  color: #333;
+  text-align: center;
+}
+
+.header {
+  padding: 2rem 1rem;
+  background-color: #ffb6c1;
+  color: white;
+}
+
+.floating-stars img {
+  position: absolute;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.swiper-section {
+  padding: 2rem;
+}
+
+.swiper-slide img {
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.music-player {
+  margin: 2rem 0;
+}
+
+.music-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.message {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.otp-zone {
+  margin: 2rem;
+}
+
+.otp-inputs input {
+  width: 40px;
+  height: 50px;
+  margin: 0 5px;
+  font-size: 2rem;
+  text-align: center;
+  border: 2px solid #f78da4;
+  border-radius: 6px;
+}
+
+#secret-content {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #fff0f5;
+  border-radius: 10px;
+  display: none;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #ffe3ec;
+  color: #555;
+  font-size: 0.9rem;
+}
