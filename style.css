@@ -65,13 +65,19 @@ body {
 }
 
 .otp-inputs input {
-  width: 40px;
-  height: 50px;
-  margin: 0 5px;
+  width: 50px;
+  height: 60px;
   font-size: 2rem;
   text-align: center;
-  border: 2px solid #f78da4;
-  border-radius: 6px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.otp-inputs input:focus {
+  border-color: #f78da4;
+  box-shadow: 0 0 5px #f78da4;
 }
 
 @media (max-width: 480px) {
