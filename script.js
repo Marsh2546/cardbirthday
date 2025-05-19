@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         otpInputs[idx + 1].focus();
       }
       const entered = Array.from(otpInputs).map((i) => i.value).join("");
-      if (entered.length === 5) {
+      if (entered.length === 6) {
         if (entered === correctOTP) {
           secretContent.style.display = "block";
           showConfetti();

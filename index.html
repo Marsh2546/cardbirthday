@@ -11,60 +11,63 @@
   <body>
     <div id="root">
       <section class="header">
-        <h1 class="font-[&#39;Kanit&#39;]">สุขสันต์วันเกิด</h1>
-        <h2 id="receiver-name">พลอย ❤️</h2>
+        <h1 class="font-[&#39;Kanit&#39;]">Happy Birthday</h1>
+        <h2 id="receiver-name">Ployy ❤️</h2>
       </section>
 
+      
       <section class="floating-stars">
         <!-- ใส่ภาพตกแต่ง (ดาว, หัวใจ ฯลฯ) -->
       </section>
-
+      
       <section class="swiper-section">
-    <div class="swiper mySwiper">
-    <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-        <!-- Slides -->
+        <div class="swiper mySwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
             <div class="swiper-slide"><img src="images/DSC02478.jpg" /></div>
             <div class="swiper-slide"><img src="images/IMG_7398.JPG" /></div>
             <div class="swiper-slide"><img src="images/DSC02486.jpg" /></div>
             <div class="swiper-slide"><img src="images/DSC02513.jpg" /></div>
             <div class="swiper-slide"><img src="images/IMG_3048.JPG" /></div>
             <div class="swiper-slide"><img src="images/IMG_7010.JPG" /></div>
-        </div>
-      </section>
+          </div>
+        </section>
+        
+        <section class="otp-zone">
+          <h3>Memories Zone 📸</h3>
+          <p>กรอกรหัส OTP 6 หลักเพื่อปลดล็อกข้อความลับ</p>
+          <div class="otp-inputs">
+            <input maxlength="1" />
+            <input maxlength="1" />
+            <input maxlength="1" />
+            <input maxlength="1" />
+            <input maxlength="1" />
+            <input maxlength="1" />
+          </div>
+        </section>
 
-      <section class="music-player">
-        <audio id="bg-music" src="music/ฝากใจ - INK WARUNTORN [Official MV].mp4" preload="auto"></audio>
+        <section id="secret-content" class="hidden">
+          <h4>ข้อความลับ 💌</h4>
+          <p>ใส่ได้เมื่อ OTP ถูกต้อง</p>
+        </section>
+
+      <section class="music-player" id="secret-content">
+        <audio id="bg-music" src="music/music1.mp4" preload="auto"></audio>
         <div class="music-controls">
           <button id="play-btn">▶️</button>
           <span id="music-title">ฝากใจ</span>
         </div>
       </section>
 
-      <section class="message">
+      <section class="message" id="secret-content">
         <ul>
           <li>สุขสันต์วันเกิดน้าาเทออ เค้าขอให้เทอมีความสุขมากๆๆขึ้นๆเลื่อยเลยนะให้เขาเติบโตไปได้ดีและขอให้เค้าได้อยู่กับเทอนานแล้วเราก้รักกันมากขึ้นเลื่อยใส่ใจกันอยู่แคร์กันและกันแบบนี้ไปเลื่อยๆจนแก่เลยนะะ</li>
           <li>จะยาวกี่บรรทัดก็ได้</li>
         </ul>
       </section>
 
-      <section class="otp-zone">
-        <h3>Memories Zone 📸</h3>
-        <p>กรอกรหัส OTP 6 หลักเพื่อปลดล็อกข้อความลับ</p>
-        <div class="otp-inputs">
-          <input maxlength="1" />
-          <input maxlength="1" />
-          <input maxlength="1" />
-          <input maxlength="1" />
-          <input maxlength="1" />
-          <input maxlength="1" />
-        </div>
-      </section>
 
-      <section id="secret-content" class="hidden">
-        <h4>ข้อความลับ 💌</h4>
-        <p>ใส่ได้เมื่อ OTP ถูกต้อง</p>
-      </section>
 
       <footer>
         <p>สร้างด้วยใจ 💖 โดยคุณหมูอ้วนที่รักเทออ;;</p>
