@@ -1,5 +1,4 @@
 /* ==== style.css: ตกแต่งเว็บไซต์วันเกิด ==== */
-
 body {
   font-family: 'Kanit', sans-serif;
   margin: 0;
@@ -82,3 +81,18 @@ footer {
   color: #555;
   font-size: 0.9rem;
 }
+
+.swiper {
+      width: 240px;
+      height: 320px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }

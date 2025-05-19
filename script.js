@@ -1,5 +1,5 @@
 // ==== script.js: ควบคุมการเล่นเพลง และ OTP ปลดล็อกข้อความลับ ====
-
+// 🎵 Music Player
 document.addEventListener("DOMContentLoaded", () => {
   const playBtn = document.getElementById("play-btn");
   const bgMusic = document.getElementById("bg-music");
@@ -111,4 +111,13 @@ document.addEventListener("DOMContentLoaded", () => {
       canvas.remove();
     }, 5000);
   }
+  
+  var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
 });
