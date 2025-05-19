@@ -41,7 +41,7 @@
       const entered = Array.from(otpInputs).map((i) => i.value).join("");
       if (entered.length === 6) {
         if (entered === correctOTP) {
-          secretContent.style.display = "block";
+          secretContent.style.display = "inline-block";
           showConfetti();
         } else {
           secretContent.style.display = "none";
