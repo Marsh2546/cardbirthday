@@ -1,6 +1,6 @@
 /* ==== style.css: ตกแต่งเว็บไซต์วันเกิด ==== */
 body {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   margin: 0;
   padding: 0;
   /* background: linear-gradient(to bottom, #ffe3ec, #ffffff); */
@@ -9,23 +9,23 @@ body {
   background: linear-gradient(var(--piggypink) 3%, var(--lightpink) 110%);
 }
 
-:root{
+:root {
   /* ==== color ตกแต่งเว็บไซต์วันเกิด ==== */
-    --piggypink : #ee9ca7;
-    --lightpink : #ffdde1;
-    --blue      : #4e7ff1;
-    --voilet    : #8a5a8f;
-    --lightblack: #515c6f;
-    --white     : #fff;
-    --darkwhite : #cecaca;
-    --ponkshadow: #ffcbdd;
-    --lighbshadow:rgba(0, 0, 0, 0.15);
-    --shadow    : rgba(0, 0, 0, 0.99);
+  --piggypink: #ee9ca7;
+  --lightpink: #ffdde1;
+  --blue: #4e7ff1;
+  --voilet: #8a5a8f;
+  --lightblack: #515c6f;
+  --white: #fff;
+  --darkwhite: #cecaca;
+  --ponkshadow: #ffcbdd;
+  --lighbshadow: rgba(0, 0, 0, 0.15);
+  --shadow: rgba(0, 0, 0, 0.99);
 }
 
 .title {
-  font-family: 'Sour Gummy', sans-serif;
-  font-size: clamp(2rem,10vw,5rem);
+  font-family: "Sour Gummy", sans-serif;
+  font-size: clamp(2rem, 10vw, 5rem);
   color: var(--blue);
   /* text-shadow: 0px 0px 10px var(--voilet), 0px 0px 1px var(--lightblack); */
   margin: 1rem 0 0 0;
@@ -33,14 +33,13 @@ body {
 }
 
 .name {
-  font-family: 'Sour Gummy', sans-serif;
+  font-family: "Sour Gummy", sans-serif;
   font-size: clamp(1.5rem, 5vw, 4rem);
   color: var(--blue);
   /* text-shadow: 0px 0px 10px var(--voilet), 0px 0px 1px var(--lightblack); */
   margin: 0;
   padding: 0;
 }
-
 
 .header {
   padding: 2rem 1rem;
@@ -49,18 +48,33 @@ body {
 
 .floating-stars img {
   position: absolute;
+  opacity: 0.8;
   animation: float 4s ease-in-out infinite;
 }
-.floating-stars img:nth-child(1) {
-  top: 10%;
-  left: 20%;
+
+.emoji1 {
+  top: 30%;
+  left: 15%;
   animation-delay: 0s;
 }
-
-
+.emoji2 {
+  top: 60%;
+  left: 65%;
+  animation-delay: 1s;
+}
+.emoji3 {
+  top: 20%;
+  left: 75%;
+  animation-delay: 2s;
+}
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .swiper-section {
@@ -70,7 +84,7 @@ body {
 .swiper-slide img {
   width: 250px;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .music-player {
@@ -89,13 +103,13 @@ body {
   position: relative;
   display: inline-block;
   max-width: 80%;
-  font-family: 'Itim';
+  font-family: "Itim";
   font-size: clamp(1rem, 1vw, 2rem);
   background-color: rgba(255, 255, 255, 0.7);
   margin: 1rem;
-  padding: min(1rem,8%);
+  padding: min(1rem, 8%);
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .message-list {
   list-style: none;
@@ -135,10 +149,10 @@ body {
 .otp-inputs {
   display: flex;
   justify-content: center; /* เว้นช่องเท่ากัน */
-  flex-wrap: nowrap;              /* ห้ามตกบรรทัด */
+  flex-wrap: nowrap; /* ห้ามตกบรรทัด */
   width: 100%;
-  max-width: 300px;               /* ขีดจำกัดความกว้างรวม */
-  margin: auto;                   /* จัดกลาง */
+  max-width: 300px; /* ขีดจำกัดความกว้างรวม */
+  margin: auto; /* จัดกลาง */
   padding: 0 10px;
 }
 
@@ -167,7 +181,6 @@ body {
   }
 }
 
-
 #secret-content {
   max-width: 80%;
   padding: min(1rem, 8%);
@@ -184,16 +197,16 @@ footer {
 }
 
 .swiper {
-      width: 240px;
-      height: 320px;
-    }
+  width: 240px;
+  height: 320px;
+}
 
-    .swiper-slide {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 18px;
-      font-size: 22px;
-      font-weight: bold;
-      color: #fff;
-    }
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
