@@ -221,6 +221,7 @@ body {
 
 .otp-zone {
   margin: 2rem;
+  font-family: "Sour Gummy", sans-serif;
 }
 
 /* .otp-inputs {
@@ -268,6 +269,7 @@ body {
   border: 2px solid #f78da4;
   border-radius: 6px;
   max-width: 40px; /* จำกัดความกว้างต่อช่อง */
+  font-family: "Sour Gummy", sans-serif;
 }
 
 /* สำหรับหน้าจอแคบ */
@@ -290,6 +292,14 @@ body {
   background-color: #fff0f5;
   border-radius: 10px;
   display: none;
+}
+
+.card {
+  width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  margin: 1rem 0;
+  padding: min(1rem, 2%);
 }
 
 footer {
