@@ -23,31 +23,123 @@ body {
   --shadow: rgba(0, 0, 0, 0.99);
 }
 
-.title {
+.title-top {
   font-family: "Sour Gummy", sans-serif;
-  font-size: clamp(80px, 80px, 120px);
-  /* font-size: 80px; */
-  color: var(--blue);
-  /* text-shadow: 0px 0px 10px var(--voilet), 0px 0px 1px var(--lightblack); */
+  font-size: clamp(80px, 90px, 120px);
+  color: var(--white);
+  /* text-shadow: 0px 0px 10px var(--blue), 0px 0px 1px var(--lightblack); */
   margin: 1rem 0 0 0;
   padding: 0;
 }
 
+/* .title-top span{
+    display: inline-block;
+    animation: wave 3s ease-in-out infinite;
+} */
+
+/* .title-top span:nth-child(1) {
+    animation-delay: 0s;
+}
+.title-top span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.title-top span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.title-top span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.title-top span:nth-child(5) {
+    animation-delay: 0.8s;
+} */
+
+.title-bottom {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: clamp(80px, 70px, 100px);
+  color: var(--white);
+  /* text-shadow: 0px 0px 10px var(--blue), 0px 0px 1px var(--lightblack); */
+  margin: -1rem 0 0 0;
+  padding: 0;
+}
+
+/* .title-bottom span{
+    display: inline-block;
+    animation: wave 3s ease-in-out infinite;
+    animation-delay: 0.1s;
+} */
+
 .name {
   font-family: "Sour Gummy", sans-serif;
   font-size: clamp(50px, 60px, 80px);
-  color: var(--blue);
+  color: var(--white);
   /* text-shadow: 0px 0px 10px var(--voilet), 0px 0px 1px var(--lightblack); */
-  margin: 0;
-  padding: 0;
+  margin: 1rem;
+  padding: 0rem 0 2rem 0;
+}
+
+.name span{
+    display: inline-block;
+    animation: wave 3s ease-in-out infinite;
+    /* animation-delay: 0.1s; */
+}
+
+.name span:nth-child(1) {
+    animation-delay: 0s;
+}
+  .name span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+  .name span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+  .name span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+  .name span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+  .name span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+  .name span:nth-child(6) {
+    animation-delay: 1s;
+}
+@keyframes wave{
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
 }
 
 .header {
   position: relative;
-  padding: 2rem 1rem;
+  padding: 0rem 1rem;
   width: fit-content;
   margin: auto;
   color: white;
+}
+
+.name {
+    position: relative;
+    z-index: 2;
+    font-size: 4em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transform: rotate(-10deg);
+    text-shadow: 1px 1px hsl(50, 50%, 45%),
+                 2px 2px hsl(50, 50%, 40%),
+                 3px 3px hsl(50, 50%, 35%),
+                 4px 4px hsl(50, 50%, 34%),
+                 5px 5px hsl(50, 50%, 33%),
+                 6px 6px hsl(50, 50%, 32%),
+                 7px 7px hsl(50, 50%, 31%),
+                 8px 8px hsl(50, 50%, 30%),
+                 9px 9px hsl(50, 50%, 29%),
+                 10px 10px hsl(50, 50%, 28%),
+                 10px 10px 30px rgba(0,0,0,.7),
+
 }
 
 .floating-stars  img{
@@ -59,14 +151,14 @@ body {
 .smile {
   width: 50px;
   height: 50px;
-  top: 15%;
-  left: 5%;
+  top: 10%;
+  left: -2%;
   animation-delay: 0s;
 }
 .cake {
   width: 50px;
   height: 50px;
-  top: 45%;
+  top: 37%;
   left: 90%;
   animation-delay: 3s;
 }
@@ -89,7 +181,7 @@ body {
 }
 
 .swiper-section {
-  padding: 2rem;
+  padding: 0rem;
 }
 
 .swiper-slide img {
