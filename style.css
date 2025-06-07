@@ -295,10 +295,12 @@ body {
 }
 
 .card {
-  width: 50%;
+  display: block;
+  max-width: 80%;
+  height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  margin: 1rem 0;
+  margin: 1rem auto;
   padding: min(1rem, 2%);
 }
 
@@ -324,7 +326,7 @@ footer {
   color: #fff;
 }
 
-/* ==== ของขวัญ ==== */
+/* ==== กล่องของขวัญ ==== */
 #gift-box {
   width: 200px;
   height: 200px;
@@ -333,6 +335,7 @@ footer {
   align-items: center;
   margin: 2rem auto;
 }
+
 .gift-box {
   position: relative;
   width: 150px;
@@ -381,10 +384,10 @@ footer {
 .gift-box .click {
   position: absolute;
   background: #ffdde1;
-  width: 150px;
+  width: 170px;
   height: 40px;
   top: -38px;
-  left: 0;
+  transform: translateX(-50%);
   transform-origin: bottom left;
   cursor: pointer;
   transition: 0.5s;
@@ -398,7 +401,7 @@ footer {
   width: 25px;
   height: 40px;
   background: crimson;
-  left: 62px;
+  left: 72px;
 }
 
 /* โบว์ */
