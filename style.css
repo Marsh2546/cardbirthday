@@ -295,7 +295,7 @@ body {
 }
 
 .card {
-  width: 80%;
+  width: 50%;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   margin: 1rem 0;
@@ -322,4 +322,242 @@ footer {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
+}
+
+/* ==== ของขวัญ ==== */
+#gift-box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+.gift-box {
+  position: relative;
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* กล่องของขวัญ */
+.gift-box input[type="checkbox"] {
+  display: none;
+}
+
+.gift-box .gift {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  background: #ffdde1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.gift-box .gift::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 100px;
+  background: crimson;
+  left: 62px;
+}
+
+.gift-box .gift::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  transform: translateX(-50%);
+  box-shadow: inset 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* ฝาบน */
+.gift-box .click {
+  position: absolute;
+  background: #ffdde1;
+  width: 150px;
+  height: 40px;
+  top: -38px;
+  left: 0;
+  transform-origin: bottom left;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 10px;
+  z-index: 3;
+}
+
+.gift-box .click::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 40px;
+  background: crimson;
+  left: 62px;
+}
+
+/* โบว์ */
+.gift-box .tape {
+  position: absolute;
+  background: crimson;
+  width: 2.5em;
+  height: 3em;
+  top: -65px;
+  left: 25px;
+  border-radius: 1.5em 0 3em 1em / 1.5em 0 3em 3.5em;
+  transform: rotate(60deg);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.gift-box .tape::before {
+  content: "";
+  position: absolute;
+  background: crimson;
+  width: 2.5em;
+  height: 3em;
+  left: 30px;
+  border-radius: 0 1.5em 1em 3em / 0 1.5em 3.5em 3em;
+  top: -51px;
+  transform: rotate(-120deg);
+}
+
+/* เงา */
+.gift-box .shadow {
+  position: absolute;
+  background: rgba(169, 16, 47);
+  width: 30px;
+  height: 30px;
+  top: -55px;
+  left: 59px;
+  border-radius: 50%;
+  transform-origin: 100% 15%;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.gift-box .shadow::before,
+.gift-box .shadow::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+}
+
+.gift-box .shadow::before {
+  left: -20px;
+  transform: rotate(30deg);
+}
+
+.gift-box .shadow::after {
+  left: 25px;
+  transform: rotate(-30deg);
+}
+
+/* เมื่อคลิก */
+.gift-box input:checked ~ .click {
+  transform: rotate(-110deg) scale(0.85);
+  visibility: hidden;
+}
+
+.gift-box input:checked ~ .tape {
+  transform: rotate(-50deg) scale(0.85);
+  left: -80px;
+  top: -53px;
+  visibility: hidden;
+}
+
+.gift-box input:checked ~ .shadow {
+  transform: rotate(-110deg) scale(0.85);
+  left: -110px;
+  top: -69px;
+  visibility: hidden;
+}
+
+.gift-box input:checked ~ .gift {
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+/* ของขวัญ */
+.gift-box .gift-image {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  background: url("/images/twinkle_twinkle.webp") center/cover no-repeat;
+  border-radius: 1em;
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  animation: zoomout 0.8s ease forwards;
+}
+
+.gift-box input:checked ~ .gift-image {
+  display: block;
+}
+
+/* พลุ */
+.gift-box .fireworks {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.gift-box input:checked ~ .fireworks {
+  display: block;
+}
+
+.gift-box .fireworks span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: hsl(calc(var(--i) * 36), 100%, 60%);
+  border-radius: 50%;
+  animation: explode 1s ease-out forwards;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+/* Animation */
+@keyframes zoomout {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes explode {
+  0% {
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(-50% + var(--x) * 1px), calc(-50% + var(--y) * 1px)) scale(2);
+    opacity: 0;
+  }
 }
