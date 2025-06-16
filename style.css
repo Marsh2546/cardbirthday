@@ -298,7 +298,7 @@ body {
   display: none;
 }
 
-.card {
+/* .card {
   display: block;
   max-width: 80%;
   height: auto;
@@ -306,6 +306,15 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   margin: 1rem auto;
   padding: min(1rem, 2%);
+} */
+
+.card-video{
+  display: block;
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  margin: 1rem auto;
 }
 
 footer {
