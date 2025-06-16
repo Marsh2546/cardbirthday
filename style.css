@@ -219,6 +219,10 @@ body {
   padding: 0;
 }
 
+.message-gift,.message-secret{
+   font-family: "Itim";
+}
+
 .otp-zone {
   margin: 2rem;
   font-family: "Sour Gummy", sans-serif;
